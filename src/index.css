@@ -7,8 +7,8 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: #242424;
+  background-color: white;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -17,20 +17,38 @@
 }
 
 .jolt {
-  animation: jolt 2s linear infinite;
+  animation: jolt 1s linear infinite;
+}
+
+.fade-slide {
+  opacity: 0;
+  animation-name: fadeInOut;
+  animation-duration: 9s;
+  animation-iteration-count: infinite;
 }
 
 @keyframes jolt {
   0% {
     transform: translateY(0px);
+    fill: #f87f23;
   }
 
   50% {
     transform: translateY(40px);
+    fill: #f98a35;
   }
 
   100% {
     transform: translateY(0px);
+    fill: #f87f23;
   }
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; }
+  10% { opacity: 1; }
+  33% { opacity: 1; }
+  43% { opacity: 0; }
+  100% { opacity: 0; }
 }
 
