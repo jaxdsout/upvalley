@@ -20,11 +20,17 @@
   animation: jolt 1s linear infinite;
 }
 
-.fade-slide {
-  opacity: 0;
-  animation-name: fadeInOut;
-  animation-duration: 9s;
-  animation-iteration-count: infinite;
+.fade-out {
+  animation: fadeOut 1s ease-out both;
+  animation-duration: infinite;
+}
+
+.inner-shadow {
+  box-shadow: inset 0 1.5px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.drop-shadow-180 {
+  filter: drop-shadow(0 -4px 4px rgb(0 0 0 / 0.15));
 }
 
 @keyframes jolt {
@@ -44,11 +50,8 @@
   }
 }
 
-@keyframes fadeInOut {
-  0% { opacity: 0; }
-  10% { opacity: 1; }
-  33% { opacity: 1; }
-  43% { opacity: 0; }
+@keyframes fadeOut {
+  0% { opacity: 1; }
   100% { opacity: 0; }
 }
 
