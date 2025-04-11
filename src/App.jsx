@@ -4,10 +4,10 @@ import Footer from "./partials/Footer";
 import About from "./pages/About";
 import Contact from "./pages/Contact"
 import NavCover from "./partials/NavCover";
-import Bolt from "./components/Bolt"
 
 import { useState, useRef, useEffect } from "react";
 import { Routes, Route, useNavigate } from "react-router";
+import Projects from "./pages/Projects";
 
 function App() {
   const [lightning, setLightning] = useState(true);
@@ -62,7 +62,7 @@ function App() {
   return (
       <div className='flex flex-col items-start justify-center h-screen'>
         {!hide ? (
-          <div className="flex flex-col items-center justify-center w-screen h-screen relative bg-contain bg-repeat bg-size-[2rem]" style={{ backgroundImage: burger ? `url(img/svg-path.svg)` : "none" }}
+          <div className="flex flex-col items-center justify-center w-screen h-screen relative"
           >
             
               {burger ? (
@@ -70,10 +70,9 @@ function App() {
               ) : (
                 <div 
                   className="z-50 flex flex-col items-center justify-center w-full h-screen" 
-                  style={{ transform: `translateY(${lightning ? "0%" : "-56.6%"})`, transition: "transform 0.8s ease-out" }}
+                  style={{ transform: `translateY(${lightning ? "0%" : "-42%"})`, transition: "transform 0.8s ease-out" }}
                 >
-                  <Bolt />
-                  <Logo />
+                 <Logo />
                 </div>
               )}
              
@@ -96,6 +95,7 @@ function App() {
                 <Route path="/" element={ <Home /> } />
                 <Route path="/about/" element={ <About /> } />
                 <Route path="/contact/" element={ <Contact /> } />
+                <Route path="/projects/" element={ <Projects /> } />
               </Routes>
             <Footer />
           </div>

@@ -25,11 +25,19 @@ function Home () {
             <div className="w-full">
                 <img src={backgrounds[carousel]} alt='Gallery' className="min-h-[350px] max-h-[500px] w-full object-cover"/>
             </div>
-            <div className="flex flex-col items-center justify-center inner-shadow drop-shadow-180">
-                <div className="w-7/8 sm:w-1/2 text-center mt-8 mb-8 bg-[#242424] rounded-lg p-6 drop-shadow-lg inner-shadow">
-                    <p className="text-white">At UpValley Electric Inc. we do our very best to cover all of your electrical needs. We pride ourselves on servicing wineries in addition to residential & commercial electrical work. There is never a job that is too big or too small for us. When you contact us, you can be sure that you are going to be met with a friendly, professional, and knowledgeable staff member. </p>
+            <div className="flex flex-col items-center justify-center inner-shadow drop-shadow-180 w-screen">
+                <div className="w-full text-center bg-[#f87f23] py-13 px-8 drop-shadow-lg">
+                    <h1 className="text-white tracking-wider font-black text-xl sm:text-3xl">SERVING NAPA VALLEY FOR OVER 20 YEARS</h1>
                 </div>
-                <div className="w-7/8 flex flex-col items-center justify-center mt-4 mb-8">
+                <div className="w-full flex flex-row h-[300px]">
+                    <img src={w1} alt="home-pane-1" className="w-1/2 object-cover"/>
+                    <div className="bg-[#ececec] w-1/2">
+                        <p className="px-14 py-6">At UpValley Electric Inc. we do our very best to cover all of your electrical needs. We pride ourselves on servicing wineries in addition to residential & commercial electrical work. 
+                        </p>
+                    </div>
+                </div>
+                <div className="w-full flex flex-row h-[300px]">
+                    <div className="bg-[#ececec] w-1/2 flex flex-col items-center justify-center px-4 ">
                     <h1 className="text-xl font-bold tracking-wider mb-2">SERVICES</h1>
                     <ul className="grid grid-cols-2 gap-x-8 gap-y-2 text-center">
                         <li>New Construction & Remodel</li>
@@ -39,10 +47,16 @@ function Home () {
                         <li>Energy Efficiency</li>
                         <li>Voice and Data Cabling</li>
                     </ul>
+                    </div>
+                    <img src={w2} alt="home-pane-1" className="w-1/2 object-cover"/>
                 </div>
-                <div className="w-7/8 sm:w-1/2 flex flex-col items-center justify-center mt-8 mb-8">
-                    <img src={workers[carousel]} alt='Service' className="rounded-lg drop-shadow-lg"/>
+                <div className="w-full flex flex-row h-[300px]">
+                    <img src={w3} alt="home-pane-1" className="w-1/2 object-cover"/>
+                    <div className="bg-[#ececec] w-1/2 px-4 py-13">
+                        <p>There is never a job that is too big or too small for us. When you contact us, you can be sure that you are going to be met with a friendly, professional, and knowledgeable staff member.</p>
+                    </div>
                 </div>
+                
             </div>
         </>
     )
