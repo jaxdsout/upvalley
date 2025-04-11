@@ -1,9 +1,9 @@
-import b1 from "./assets/455a9d0f85df81fcf8dc65019d274e4d.jpg"
-import b2 from "./assets/a8472ad2b5b3598dd3b576abff796d7b.jpg"
-import b3 from "./assets/eea55edc3749f89aa2c23cf508e55615.jpg"
-import w1 from "./assets/8e080d9aec56de36e99359e9995e9606.jpg"
-import w2 from "./assets/5cb57ed69c2ddbbd3f496483c46e3a1d.jpg"
-import w3 from "./assets/d95fd3bdb487a9422716798f97117cdd.jpg"
+import b1 from "../assets/455a9d0f85df81fcf8dc65019d274e4d.jpg"
+import b2 from "../assets/a8472ad2b5b3598dd3b576abff796d7b.jpg"
+import b3 from "../assets/eea55edc3749f89aa2c23cf508e55615.jpg"
+import w1 from "../assets/8e080d9aec56de36e99359e9995e9606.jpg"
+import w2 from "../assets/5cb57ed69c2ddbbd3f496483c46e3a1d.jpg"
+import w3 from "../assets/d95fd3bdb487a9422716798f97117cdd.jpg"
 import { useState, useEffect } from "react"
 
 const workers = [w1, w2, w3];

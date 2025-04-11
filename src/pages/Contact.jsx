@@ -1,5 +1,3 @@
-import Navbar from "./Navbar"
-import Footer from "./Footer"
 import { useState } from "react"
 
 function Contact () {
@@ -17,7 +15,7 @@ function Contact () {
 
     return (
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-6 sm:gap-y-1 p-5">
-            <div className="flex flex-col items-center justify-evenly bg-blue-400 p-5">
+            <div className="flex flex-col items-center justify-evenly bg-[#e0e0e0] rounded-lg p-5">
                 <div className="flex flex-col items-start justify-start">
                     <h2 className="text-sm font-bold tracking-wider">PHONE:</h2>
                     <a href="tel:7079631918" className="ml-2 hover:text-[#f87f23]">  
@@ -41,38 +39,38 @@ function Contact () {
             </div>
             </div>
            
-            <div className="flex flex-col items-center justify-center bg-yellow-500 p-5">
+            <div className="flex flex-col items-center justify-center bg-[#ececec] rounded-lg p-5">
                 <h2 className="text-sm font-bold tracking-wider">HAVE A QUESTION?</h2>
                 <h4 className="text-xs w-1/2 text-center text-wrap mb-3">FILL OUT THE FORM BELOW & WE'LL GET BACK TO YOU!</h4>
                 <form className="flex flex-col items-start justify-center" autoComplete="off">
                     <label for="name" className="text-sm font-bold tracking-wider" >NAME:</label>
                     <input
                         onChange={handleChange}
-                        className="indent-2 bg-[#242424] rounded-lg text-white h-[3rem] w-[14rem]" 
+                        className="indent-2 bg-[#242424] rounded-lg text-white h-[3rem] w-[18rem]" 
                         name='name' placeholder="First & Last Name" value={name} type="text">
                     </input>
                 <label for="email" className="text-sm font-bold tracking-wider mt-3">EMAIL:</label>
                 <input
                     onChange={handleChange}
-                    className="indent-2 bg-[#242424] rounded-lg text-white h-[3rem] w-[14rem]" 
+                    className="indent-2 bg-[#242424] rounded-lg text-white h-[3rem] w-[18rem]" 
                     name='email' placeholder="" value={email} type="email">
                 </input>
                 <label for="phone" className="text-sm font-bold tracking-wider mt-3">PHONE:</label>
                 <input
                     onChange={handleChange}
-                    className="indent-2 bg-[#242424] rounded-lg text-white h-[3rem] w-[14rem]" 
+                    className="indent-2 bg-[#242424] rounded-lg text-white h-[3rem] w-[18rem]" 
                     name='phone' placeholder="" value={phone} type="tel">
                 </input>
                 <label for="subject" className="text-sm font-bold tracking-wider mt-3">SUBJECT:</label>
                 <input
                     onChange={handleChange}
-                    className="indent-2 bg-[#464646] rounded-lg text-white h-[3rem] w-[14rem]" 
+                    className="indent-2 bg-[#464646] rounded-lg text-white h-[3rem] w-[18rem]" 
                     name='subject' placeholder="" value={subject} type="text">
                 </input>
                 <label for="message" className="text-sm font-bold tracking-wider mt-3">MESSAGE:</label>
                 <textarea
                     onChange={handleChange}
-                    className="indent-2 bg-[#464646] rounded-lg text-white w-[14rem]"                     
+                    className="indent-2 bg-[#464646] rounded-lg text-white w-[18rem]"                     
                     name='message' placeholder="" value={message} rows="4">
                 </textarea>
                 <button type="submit" className="bg-black text-white text-sm font-bold tracking-wide rounded-lg mt-4 p-4 hover:bg-[#f87f23]">SUBMIT</button>
