@@ -6,7 +6,7 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
+  color-scheme: light;
   color: #242424;
   background-color: white;
 
@@ -17,7 +17,7 @@
 }
 
 .jolt {
-  animation: jolt 1s linear infinite;
+  animation: jolt 0.25s infinite;
 }
 
 .fade-out {
@@ -35,17 +35,27 @@
 
 @keyframes jolt {
   0% {
-    transform: translateY(0px);
+    transform: translate(0px, 0px);
     fill: #f87f23;
   }
 
+  25% {
+    transform: translate(-5px, 20px);
+    fill: #f98a35;
+  }
+
   50% {
-    transform: translateY(40px);
+    transform: translate(-0px, 40px);
+    fill: #f98a35;
+  }
+
+  75% {
+    transform: translate(-5px, 20px);
     fill: #f98a35;
   }
 
   100% {
-    transform: translateY(0px);
+    transform: translateY(0px, 0px);
     fill: #f87f23;
   }
 }
