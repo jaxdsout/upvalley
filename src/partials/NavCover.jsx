@@ -5,9 +5,9 @@ function NavCover ({ handleNavCover }) {
 
     const handlePageNav = (page) => {
         if (page === 'contact') {
-            navigate('/contact')
+            navigate('/contact/')
         } else if (page === 'about') {
-            navigate('/about')
+            navigate('/about/')
         } else {
             navigate('/')
         };
