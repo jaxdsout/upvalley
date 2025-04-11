@@ -9,7 +9,7 @@ function NavCover ({ handleNavCover }) {
         } else if (page === 'about') {
             navigate('/about/')
         } else {
-            navigate('/upvalley/')
+            navigate('/')
         };
         handleNavCover();
     }

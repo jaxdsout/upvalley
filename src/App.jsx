@@ -85,7 +85,7 @@ function App() {
         ): (
           <div className="h-screen w-screen flex flex-col items-center justify-between">
             <nav className="sticky top-0 z-30 bg-white w-full flex items-center justify-center py-4 drop-shadow-lg">
-              <div onClick={() => navigate('/upvalley/')}>
+              <div onClick={() => navigate('/')}>
                   <Logo /> 
               </div>
               <div className="absolute right-4" onClick={handleNavCover}>
@@ -93,7 +93,7 @@ function App() {
               </div>
             </nav>
               <Routes>
-                <Route path="/upvalley/" element={ <Home /> } />
+                <Route path="/" element={ <Home /> } />
                 <Route path="/about/" element={ <About /> } />
                 <Route path="/contact/" element={ <Contact /> } />
               </Routes>
