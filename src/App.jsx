@@ -14,7 +14,6 @@ function App() {
   const [hide, setHide] = useState(true);
   const handleNavCover = () => setHide(prev => !prev)
 
-
   useEffect(() => {
     if (!hide) {
       window.scrollTo({ top: 0, behavior: "auto" });
@@ -37,6 +36,7 @@ function App() {
           animate="visible"
           exit="reset"
           transition={{ duration: 0.45, delay: 0.1 }} 
+          tabIndex={-1}
         >
           <Navtab
             handleNavCover={handleNavCover} setHide={setHide}
@@ -44,7 +44,7 @@ function App() {
         </motion.div>
       )}
       </AnimatePresence>
-        <div className=" flex flex-col items-center justify-between" style={{ zIndex: 3}}>
+        <div className="h-screen flex flex-col items-center justify-between" style={{ zIndex: 3}}>
           <Navbar handleNavCover={handleNavCover} />
             <Routes>
               <Route path="/" element={ <Home /> } />

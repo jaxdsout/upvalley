@@ -1,7 +1,7 @@
 function Logo () {
 
     return (
-        <div className='select-none text-center py-2 cursor-pointer'>
+        <div className='select-none text-center py-2 cursor-pointer hover:-translate-y-1'>
             <p className="font-semibold text-[2rem] text-black -mb-1">
                 <span className="text-[#f87f23]">Up</span>Valley Electric
             </p>

@@ -1,4 +1,5 @@
 import { useState } from "react"
+import w1 from "../assets/8e080d9aec56de36e99359e9995e9606.jpg"
 
 function Contact () {
     const [formData, setFormData] = useState({
@@ -15,8 +16,14 @@ function Contact () {
 
     return (
         <div className="flex flex-col items-center w-full">
+            <img src={w1} alt="home-pane-3" className="object-cover max-h-[599px] w-full"/>
+            <div className="flex flex-col sm:flex-row items-center w-full">
+           
+           
+            
             <div className="flex flex-col items-center justify-evenly bg-[#FFFFFC] p-5 w-full">
                 <div className="flex flex-col items-start justify-start">
+                    <h1 className="font-bold text-6xl text-center pt-5 pb-10">CONTACT</h1>
                     <h2 className="text-sm font-bold tracking-wider">PHONE:</h2>
                     <a href="tel:7079631918" className="ml-2 hover:text-[#f87f23]">  
                         <p>(707) 963-1918 </p> 
@@ -39,7 +46,7 @@ function Contact () {
                 </div>
             </div>
            
-            <div className="flex flex-col items-center justify-center bg-[#C8AB83] p-5 w-full">
+            <div className="flex flex-col items-center justify-center bg-[#ebc694] p-5 w-full">
                 <h2 className="text-sm font-bold tracking-wider">HAVE A QUESTION?</h2>
                 <h4 className="text-xs w-1/2 text-center text-wrap mb-3">FILL OUT THE FORM BELOW & WE'LL GET BACK TO YOU!</h4>
                 <form className="flex flex-col items-start justify-center" autoComplete="off">
@@ -76,6 +83,7 @@ function Contact () {
             </form>
             <div className="flex flex-col items-center justify-center">
                 <button type="submit" className="bg-black text-white text-sm font-bold tracking-wide rounded-lg mt-4 p-4 hover:bg-[#7b664a]">SUBMIT</button>
+            </div>
             </div>
             </div>
         </div>
