@@ -56,13 +56,16 @@ function Home () {
             </div>
             <div className="w-full order-2 grid grid-cols-1 sm:grid-cols-2">
                 <img src={w1} alt="home-pane-1" className="object-cover"/>
-                <p className="py-6 bg-[#C8AB83]">At UpValley Electric Inc. we do our very best to cover all of your electrical needs. We pride ourselves on servicing wineries in addition to residential & commercial electrical work. 
-                </p>
+                <div className="px-6 py-14 sm:py-6 bg-[#FFFFFC] text-center flex flex-col items-center justify-center text-sm inner-shadow">
+                    <p>At UpValley Electric Inc. we do our very best to cover all of your electrical needs. We pride ourselves on servicing wineries in addition to residential & commercial electrical work. 
+                    </p>
+                </div>
+             
             </div>
             <div className="w-full order-3 grid grid-cols-1 sm:grid-cols-2">
-                <div className="bg-[#C8AB83] flex flex-col items-center justify-center order-last sm:order-first">
-                    <h1 className="text-xl font-bold tracking-wider mb-2">SERVICES</h1>
-                    <ul className="grid grid-cols-2 gap-x-3 gap-y-2 text-center">
+                <div className="bg-[#C8AB83] flex flex-col items-center justify-center order-last sm:order-first inner-shadow px-6 py-14 sm:py-6">
+                    <h1 className="text-lg font-bold tracking-wider mb-2">SERVICES</h1>
+                    <ul className="text-sm grid grid-cols-2 gap-x-3 gap-y-2 text-center">
                         <li>New Construction & Remodel</li>
                         <li>Winery Refigeration Wiring</li>
                         <li>Thermal Imaging</li>
@@ -76,7 +79,10 @@ function Home () {
             </div>
             <div className="w-full order-4 grid grid-cols-1 sm:grid-cols-2">
                 <img src={w3} alt="home-pane-3" className="object-cover"/>
-                <p className="py-6 bg-[#C8AB83]">There is never a job that is too big or too small for us. When you contact us, you can be sure that you are going to be met with a friendly, professional, and knowledgeable staff member.</p>
+                <div className="px-6 py-14 sm:py-6 bg-[#FFFFFC] text-center flex flex-col items-center justify-center text-sm inner-shadow">
+                    <p>There is never a job that is too big or too small for us. When you contact us, you can be sure that you are going to be met with a friendly, professional, and knowledgeable staff member.</p>
+                </div>
+            
             </div>
         </div>
     )

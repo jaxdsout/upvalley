@@ -27,7 +27,7 @@ function App() {
       <AnimatePresence>
       {!hide && (
         <motion.div 
-          className="w-full h-screen bg-[#EEC584] fixed top-0 left-0 py-6"
+          className="w-full h-screen bg-[#ebc694] fixed top-0 left-0 py-6"
           variants={{
             hidden: { y: -500, zIndex: 0},
             visible: { y: 0, zIndex: 5},
