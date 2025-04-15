@@ -3,7 +3,7 @@
 function Footer () {
 
     return (
-        <div className='flex flex-col items-center justify-center w-full bg-[#242424] text-white py-5 shadow-inset'>
+        <div className='flex flex-col items-center justify-center bg-black text-white py-5 shadow-inset w-full'>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-24">
               <div className="flex flex-col items-start justify-center">
                 <h1 className="text-sm font-bold tracking-wider">CONTACT</h1>

@@ -1,6 +1,5 @@
 @import "tailwindcss";
 
-
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -8,21 +7,12 @@
 
   color-scheme: light;
   color: #242424;
-  background-color: white;
+  background-color: #FFFFFC;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-.jolt {
-  animation: jolt 0.25s infinite;
-}
-
-.fade-out {
-  animation: fadeOut 1s ease-out both;
-  animation-duration: infinite;
 }
 
 .inner-shadow {
@@ -33,35 +23,5 @@
   filter: drop-shadow(0 -4px 4px rgb(0 0 0 / 0.15));
 }
 
-@keyframes jolt {
-  0% {
-    transform: translate(0px, 0px);
-    fill: #f87f23;
-  }
 
-  25% {
-    transform: translate(-5px, 20px);
-    fill: #f98a35;
-  }
-
-  50% {
-    transform: translate(-0px, 40px);
-    fill: #f98a35;
-  }
-
-  75% {
-    transform: translate(-5px, 20px);
-    fill: #f98a35;
-  }
-
-  100% {
-    transform: translateY(0px, 0px);
-    fill: #f87f23;
-  }
-}
-
-@keyframes fadeOut {
-  0% { opacity: 1; }
-  100% { opacity: 0; }
-}
 

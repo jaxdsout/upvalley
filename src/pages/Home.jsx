@@ -4,13 +4,19 @@ import b3 from "../assets/eea55edc3749f89aa2c23cf508e55615.jpg"
 import w1 from "../assets/8e080d9aec56de36e99359e9995e9606.jpg"
 import w2 from "../assets/5cb57ed69c2ddbbd3f496483c46e3a1d.jpg"
 import w3 from "../assets/d95fd3bdb487a9422716798f97117cdd.jpg"
-import { useState, useEffect } from "react"
+import { useState, useEffect, useRef } from "react"
+import { motion, useInView, useAnimationControls } from "framer-motion"
 
-const workers = [w1, w2, w3];
 const backgrounds = [b1, b2, b3];
 
 function Home () {
+    const ref = useRef(null);
+    const isInView = useInView(ref, { once: true });
     const [carousel, setCarousel] = useState(0);
+
+    useEffect(() => {
+        console.log(isInView)
+    }, [isInView])
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -21,25 +27,42 @@ function Home () {
     }, []);
 
     return (
-        <>
-            <div className="w-full">
-                <img src={backgrounds[carousel]} alt='Gallery' className="min-h-[350px] max-h-[500px] w-full object-cover"/>
+        <div className="flex flex-col items-center justify-start">
+            <div className="w-full order-1">  
+                <motion.img          
+                    variants={{
+                        hidden: { opacity: 0, y: -75},
+                        visible: { opacity: 1, y: 0}
+                    }}
+                    initial="hidden"
+                    animate="visible"
+                    transition={{ duration: 0.5, delay: 0.25 }}
+                    src={backgrounds[carousel]} 
+                    alt='Gallery' 
+                    className="object-cover min-h-[599px] max-h-[700px] w-full"
+                />
+                <motion.h1 
+                    className="text-center text-white tracking-wider font-black text-xl sm:text-3xl bg-black px-20 py-13 drop-shadow-lg"
+                    variants={{
+                        hidden: { y: 75},
+                        visible: { y: 0}
+                    }}
+                    initial="hidden"
+                    animate="visible"
+                    transition={{ duration: 0.5, delay: 0.25 }}
+                >
+                        SERVING NAPA VALLEY FOR OVER 20 YEARS
+                </motion.h1>
             </div>
-            <div className="flex flex-col items-center justify-center inner-shadow drop-shadow-180 w-screen">
-                <div className="w-full text-center bg-[#f87f23] py-13 px-8 drop-shadow-lg">
-                    <h1 className="text-white tracking-wider font-black text-xl sm:text-3xl">SERVING NAPA VALLEY FOR OVER 20 YEARS</h1>
-                </div>
-                <div className="w-full flex flex-row h-[300px]">
-                    <img src={w1} alt="home-pane-1" className="w-1/2 object-cover"/>
-                    <div className="bg-[#ececec] w-1/2">
-                        <p className="px-14 py-6">At UpValley Electric Inc. we do our very best to cover all of your electrical needs. We pride ourselves on servicing wineries in addition to residential & commercial electrical work. 
-                        </p>
-                    </div>
-                </div>
-                <div className="w-full flex flex-row h-[300px]">
-                    <div className="bg-[#ececec] w-1/2 flex flex-col items-center justify-center px-4 ">
+            <div className="w-full order-2 grid grid-cols-1 sm:grid-cols-2">
+                <img src={w1} alt="home-pane-1" className="object-cover"/>
+                <p className="py-6 bg-[#C8AB83]">At UpValley Electric Inc. we do our very best to cover all of your electrical needs. We pride ourselves on servicing wineries in addition to residential & commercial electrical work. 
+                </p>
+            </div>
+            <div className="w-full order-3 grid grid-cols-1 sm:grid-cols-2">
+                <div className="bg-[#C8AB83] flex flex-col items-center justify-center order-last sm:order-first">
                     <h1 className="text-xl font-bold tracking-wider mb-2">SERVICES</h1>
-                    <ul className="grid grid-cols-2 gap-x-8 gap-y-2 text-center">
+                    <ul className="grid grid-cols-2 gap-x-3 gap-y-2 text-center">
                         <li>New Construction & Remodel</li>
                         <li>Winery Refigeration Wiring</li>
                         <li>Thermal Imaging</li>
@@ -47,18 +70,15 @@ function Home () {
                         <li>Energy Efficiency</li>
                         <li>Voice and Data Cabling</li>
                     </ul>
-                    </div>
-                    <img src={w2} alt="home-pane-1" className="w-1/2 object-cover"/>
                 </div>
-                <div className="w-full flex flex-row h-[300px]">
-                    <img src={w3} alt="home-pane-1" className="w-1/2 object-cover"/>
-                    <div className="bg-[#ececec] w-1/2 px-4 py-13">
-                        <p>There is never a job that is too big or too small for us. When you contact us, you can be sure that you are going to be met with a friendly, professional, and knowledgeable staff member.</p>
-                    </div>
-                </div>
-                
+                <img src={w2} alt="home-pane-2" className="object-cover"/>
+
             </div>
-        </>
+            <div className="w-full order-4 grid grid-cols-1 sm:grid-cols-2">
+                <img src={w3} alt="home-pane-3" className="object-cover"/>
+                <p className="py-6 bg-[#C8AB83]">There is never a job that is too big or too small for us. When you contact us, you can be sure that you are going to be met with a friendly, professional, and knowledgeable staff member.</p>
+            </div>
+        </div>
     )
 }
 
