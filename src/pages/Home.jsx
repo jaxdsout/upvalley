@@ -28,7 +28,7 @@ function Home () {
             </div>
             <Wedge from='right'>
                 <img src={w1} alt="home-pane-1" className="object-cover"/>
-                <div className="px-6 py-14 sm:py-6 bg-[#FFFFFC] text-center flex flex-col items-center justify-center text-sm inner-shadow">
+                <div className="px-6 py-14 sm:py-6 bg-[#FFFFFC] text-center flex flex-col items-center justify-center inner-shadow">
                     <p>At UpValley Electric Inc. we do our very best to cover all of your electrical needs. We pride ourselves on servicing wineries in addition to residential & commercial electrical work. 
                     </p>
                 </div>
@@ -36,7 +36,7 @@ function Home () {
             <Wedge from='left'>
                 <div className="bg-[#ebc694] flex flex-col items-center justify-center order-last sm:order-first inner-shadow px-6 py-14 sm:py-6">
                     <h1 className="text-lg font-bold tracking-wider mb-2">SERVICES</h1>
-                    <ul className="text-sm grid grid-cols-2 gap-x-3 gap-y-2 text-center">
+                    <ul className="text-base grid grid-cols-2 gap-x-3 gap-y-2 text-center">
                         <li>New Construction & Remodel</li>
                         <li>Winery Refigeration Wiring</li>
                         <li>Thermal Imaging</li>
@@ -45,11 +45,11 @@ function Home () {
                         <li>Voice and Data Cabling</li>
                     </ul>
                 </div>
-                <img src={w2} alt="home-pane-2" className="object-cover"/>
+                <img src={w2} alt="home-pane-2" className="object-cover h-full"/>
             </Wedge>
             <Wedge from='right'>
                 <img src={w3} alt="home-pane-3" className="object-cover"/>
-                <div className="px-6 py-14 sm:py-6 bg-[#FFFFFC] text-center flex flex-col items-center justify-center text-sm inner-shadow">
+                <div className="px-6 py-14 sm:py-6 bg-[#FFFFFC] text-center flex flex-col items-center justify-center  inner-shadow">
                     <p>There is never a job that is too big or too small for us. When you contact us, you can be sure that you are going to be met with a friendly, professional, and knowledgeable staff member.</p>
                 </div>
             </Wedge>

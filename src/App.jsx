@@ -6,7 +6,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact"
 import Footer from "./partials/Footer";
 import Projects from "./pages/Projects";
-import Navtab from "./partials/Navtab";
+import Navtab from "./components/Navtab";
 import Navbar from "./partials/Navbar";
 import { AnimatePresence, motion } from "framer-motion";
 

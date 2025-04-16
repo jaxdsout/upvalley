@@ -16,7 +16,7 @@ function Contact () {
 
     return (
         <div className="flex flex-col items-center w-full">
-            <img src={w1} alt="home-pane-3" className="object-cover max-h-[599px] w-full"/>
+            <img src={w1} alt="home-pane-3" className="object-cover max-h-[499px] w-full"/>
             <div className="flex flex-col sm:flex-row items-center w-full">
            
            
