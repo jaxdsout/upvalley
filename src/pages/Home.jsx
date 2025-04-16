@@ -47,7 +47,7 @@ function Home () {
                             <li>Voice and Data Cabling</li>
                         </ul>
                     </div>
-                    <img src={w2} alt="home-pane-2" className="object-cover h-full"/>
+                    <img src={w2} alt="home-pane-2" className="object-cover"/>
                 </Wedge>
                 <Wedge from='right'>
                     <img src={w3} alt="home-pane-3" className="object-cover"/>
