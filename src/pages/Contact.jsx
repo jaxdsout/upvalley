@@ -16,11 +16,8 @@ function Contact () {
 
     return (
         <div className="flex flex-col items-center w-full">
-            <img src={w1} alt="home-pane-3" className="object-cover max-h-[499px] w-full"/>
-            <div className="flex flex-col sm:flex-row items-center w-full">
-           
-           
-            
+            <img src={w1} alt="home-pane-3" className="object-cover max-h-[399px] w-full"/>
+            <div className="flex flex-col sm:flex-row items-start md:items-center w-full">
             <div className="flex flex-col items-center justify-evenly bg-[#FFFFFC] p-5 w-full">
                 <div className="flex flex-col items-start justify-start">
                     <h1 className="font-bold text-6xl text-center pt-5 pb-10">CONTACT</h1>

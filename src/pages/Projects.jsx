@@ -30,7 +30,7 @@ function Projects () {
                 <img
                     src={q9}
                     alt="home-pane-3"
-                    className="object-cover object-[center_right] md:object-[center_right] w-full h-full"
+                    className="mt-20 object-cover object-[center_right] md:object-[center_right] w-full h-full"
                 />
             </div>
             <h1 className="font-bold text-6xl text-center pt-10 pb-5">PROJECTS</h1>

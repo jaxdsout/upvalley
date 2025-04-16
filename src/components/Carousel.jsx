@@ -28,23 +28,22 @@ export default function Carousel () {
       }, [index]);
 
     return (
-        <div className="relative w-full h-[599px] overflow-hidden">
-        <AnimatePresence mode="wait">
-            {!isFirst && (
-                <motion.img
-                    key={`prev-${prevIndex}`}
-                    src={backgrounds[prevIndex]}
-                    alt="Previous"
-                    initial={{ opacity: 1 }}
-                    animate={{ opacity: 0 }}
-                    exit={{ opacity: 0 }}
-                    transition={{ duration: 0.5 }}
-                    className="absolute inset-0 w-full h-full object-cover"
-                    style={{ zIndex: 0 }}
-                />
-            )}
-        </AnimatePresence>
-
+        <div className="relative w-full min-h-[599px] max-h-[699px] overflow-hidden">
+            <AnimatePresence mode="wait">
+                {!isFirst && (
+                    <motion.img
+                        key={`prev-${prevIndex}`}
+                        src={backgrounds[prevIndex]}
+                        alt="Previous"
+                        initial={{ opacity: 1 }}
+                        animate={{ opacity: 0 }}
+                        exit={{ opacity: 0 }}
+                        transition={{ duration: 0.5 }}
+                        className="absolute inset-0 w-full h-full object-cover inner-shadow"
+                        style={{ zIndex: 0 }}
+                    />
+                )}
+            </AnimatePresence>
             <motion.img
                 key={`current-${index}`}
                 src={backgrounds[index]}
@@ -52,11 +51,9 @@ export default function Carousel () {
                 initial={isFirst ? { opacity: 0, y: -100 } : { opacity: 0 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.1 }}
-                className="absolute inset-0 w-full h-full object-cover"
+                className="absolute inset-0 w-full h-full object-cover inner-shadow"
                 style={{ zIndex: 1 }}
-
             />
-
         </div>
 
     )
