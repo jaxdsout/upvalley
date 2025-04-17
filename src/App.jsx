@@ -14,11 +14,6 @@ function App() {
   const [hide, setHide] = useState(true);
   const handleNavCover = () => setHide(prev => !prev)
 
-  useEffect(() => {
-    if (!hide) {
-      window.scrollTo({ top: 0, behavior: "auto" });
-    }
-  }, [hide]);
 
   return (
     

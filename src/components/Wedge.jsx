@@ -16,7 +16,7 @@ export default function Wedge({ children , from = 'right' }) {
 
     return (
         <motion.div
-            className="min-h-[150px] order-3 grid grid-cols-1 sm:grid-cols-2 w-full overflow-x-hidden"
+            className="min-h-[150px] order-3 grid grid-cols-1 md:grid-cols-2 w-full overflow-x-hidden"
             variants={{
                 left: { x: -100, opacity: 0},
                 right: {x: 100, opacity: 0},

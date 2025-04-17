@@ -38,13 +38,14 @@ function Home () {
                 <Wedge from='left'>
                     <div className="bg-[#ebc694] flex flex-col items-center justify-center order-last sm:order-first inner-shadow px-6 py-14 sm:py-6">
                         <h1 className="text-lg font-bold tracking-wider mb-2">SERVICES</h1>
+                        <hr className="w-3/4 mb-4"></hr>
                         <ul className="text-base grid grid-cols-2 gap-x-3 gap-y-2 text-center">
                             <li>New Construction & Remodel</li>
                             <li>Winery Refigeration Wiring</li>
                             <li>Thermal Imaging</li>
                             <li>Service & Maintenance</li>
                             <li>Energy Efficiency</li>
-                            <li>Voice and Data Cabling</li>
+                            <li>Voice & Data Cabling</li>
                         </ul>
                     </div>
                     <img src={w2} alt="home-pane-2" className="object-cover"/>

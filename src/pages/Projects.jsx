@@ -25,7 +25,7 @@ const modernImgs = [m1, m2, m3, m4];
 function Projects () {
 
     return (
-        <div className="flex flex-col items-center justify-center w-full">
+        <div className="flex flex-col items-center justify-center w-full bg-white">
            <div className="w-full h-[399px] overflow-hidden relative">
                 <img
                     src={q9}
@@ -33,7 +33,9 @@ function Projects () {
                     className="mt-20 object-cover object-[center_right] md:object-[center_right] w-full h-full"
                 />
             </div>
-            <h1 className="font-bold text-6xl text-center pt-10 pb-5">PROJECTS</h1>
+            <h1 className="font-bold text-6xl text-center pt-10 pb-2">PROJECTS</h1>
+            <h4 className="text-xs w-1/2 text-center text-wrap px-6 mb-5">HERE'S A FEW OF OUR RECENT FAVORITES...</h4>
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-2 pb-10">
                 <ImagePad name={"MODERN"} images={modernImgs}>
                 </ImagePad>
